@@ -11,5 +11,4 @@ def do(something):
 
 if __name__ == "__main__":
     with ThreadPoolExecutor() as executor:
-        for i in range(1000):
-            executor.submit(do, i)
+        executor.map(do, range(1000))
