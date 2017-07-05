@@ -8,7 +8,7 @@ channel = connection.channel()
 
 # make sure the recipient queue exists
 queue_name = "something"
-channel.queue_declare(queue=queue_name)
+channel.queue_declare(queue=queue_name, durable=True)
 # ready to send a message
 
 if __name__ == "__main__":
