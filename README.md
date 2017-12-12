@@ -4,3 +4,4 @@
 - Using builtin ThreadPoolExecutor
 - Using Advanced Message Queuing Protocol
 - Using Celery
+- Using builtin threading.Thread and queue.Queue
